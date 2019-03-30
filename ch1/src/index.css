@@ -1,0 +1,43 @@
+body{
+    background: #f85032;
+    background: -moz-linear-gradient(top, #f85032 0%, #f6290c 0%, #f16f5c 50%, #e73827 100%);
+    background: -webkit-linear-gradient(top, #f85032 0%,#f6290c 0%,#f16f5c 50%,#e73827 100%);
+    background: linear-gradient(to bottom, #f85032 0%,#f6290c 0%,#f16f5c 50%,#e73827 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 );
+}
+
+.banner{
+    height: 64px;
+    padding: 20px;
+    background: blue;
+}
+
+.turn-table{
+    background: yellow ;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#myCanvas{
+    position:  absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+
+}
+
+.turn-table::before{
+    content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+}
+
+
+.footer{
+    height: 2em;
+    margin-top: 40px;
+    background: green;
+}
+

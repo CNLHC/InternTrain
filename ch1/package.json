@@ -1,0 +1,16 @@
+{
+  "name": "ch1",
+  "version": "1.0.0",
+  "description": "要求前端动画适配 `android 4.4+` +  `ios 6+`",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
