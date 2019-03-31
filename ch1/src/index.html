@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/animation.css" />
 </head>
 
+<script src="./index.js"></script>
 <body class='root'>
     <div class="banner">
-
+        <img src='./img/banner.png'>
     </div>
-    <div class="turn-table" >
-        <canvas id="myCanvas" width="100%" height="100%"></canvas>
+    <div id="turn-table" >
+        <canvas id="turn-table-animation-canvas"></canvas>
+        <canvas id="turn-table-canvas"></canvas>
     </div>
     <div class="footer" >
-
     </div>
-
 </body>
+
 <script>
-    var canvas = document.getElementById("myCanvas");
-    var ctx = canvas.getContext("2d");
-    ctx.fillStyle = "green";
-    ctx.fillRect(0, 0, 150, 75);
+    drawTurnTableStatic();
+    drawTurnTableAnimated();
 </script>
 
 </html>

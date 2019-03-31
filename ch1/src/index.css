@@ -7,37 +7,62 @@ body{
 }
 
 .banner{
-    height: 64px;
+    height: 15%;
     padding: 20px;
-    background: blue;
+    background:transparent;
 }
 
-.turn-table{
-    background: yellow ;
-    position: relative;
+.banner img{
+    height: 100%;
+    width: auto;
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+}
+
+#turn-table{
+    background:transparent;
     width: 100%;
-    margin: 10px 0;
+    max-width: 600px;
+    position: relative;
+    margin: 10px auto;
+}
+#turn-table canvas{
+    width:100%;
+    position: absolute;
+}
+#turn-table-canvas{
+    z-index: 0;
+}
+#turn-table-animation-canvas{
+    z-index: 1;
 }
 
-#myCanvas{
+/* .turn-table::before{
+    content: "";
+	display: block;
+	padding-top: 100%; 	/* initial ratio of 1:1*/
+ */
+
+.footer{
+    height: 2em;
+    background:rgba(255,255,255,0.5);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.turn-table-img-group{
     position:  absolute;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-
 }
 
-.turn-table::before{
-    content: "";
-	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
+.turn-table-img-group img{
+    position: absolute;
+    width:100%;
+    height: auto;
+    max-height: 100%;
 }
-
-
-.footer{
-    height: 2em;
-    margin-top: 40px;
-    background: green;
-}
-
