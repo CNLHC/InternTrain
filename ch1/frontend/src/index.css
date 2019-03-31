@@ -38,12 +38,6 @@ body{
     z-index: 1;
 }
 
-/* .turn-table::before{
-    content: "";
-	display: block;
-	padding-top: 100%; 	/* initial ratio of 1:1*/
- */
-
 .footer{
     height: 2em;
     background:rgba(255,255,255,0.5);
