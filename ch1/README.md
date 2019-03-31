@@ -2,8 +2,8 @@
 
 ## 前端
 
-1. 使用 `Canvas` API实现前端动画
-2. 使用 `XMLHttpRequest` 实现与后端交互
+1. 使用 `Canvas` 及相关API实现前端动画。
+2. 使用 `XMLHttpRequest` 实现与后端的交互。
 
 ## 后端
 
