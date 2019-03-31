@@ -25,7 +25,7 @@ SECRET_KEY = '-_g1sfiy0(2c7)bnt=bu!#-#t0t-$=g(l8s=gxr5o6!!(ks_sy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["intern.bytedance.cnworkshop.xyz"]
 
 
 # Application definition
