@@ -7,7 +7,7 @@ from turntable.models import Prize
 
 
 class RatedThrottle(AnonRateThrottle):
-    rate="60/min"
+    rate="10/min"
 
 
 class drawlottery(APIView):

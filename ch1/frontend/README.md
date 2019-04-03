@@ -2,15 +2,13 @@
 
 ## 前端
 
-## 兼容性考虑
+1. 使用 `Canvas` API实现前端动画
+2. 使用 `XMLHttpRequest` 实现与后端交互
 
-要求前端动画适配 `android 4.4+` +  `ios 6+`
+## 后端
 
+使用`django` 提供简单的接口.
 
-### Android 兼容性信息
- 
-1. The updated WebView shipped with Android 4.4.3 has the version number 33.0.0.0.[Source](https://developer.chrome.com/multidevice/webview/overview)
+可以通过修改 `/backend/turntable/chance.conf.json`文件，并通过自定义命令 `updateChance` 将概率数据同步到数据库中.
 
-
-
-
+使用`rest-framework` 添加了`Throttling`控制，同一客户端每60s只能访问接口10次.
