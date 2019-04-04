@@ -5,13 +5,11 @@ body{
     background: linear-gradient(to bottom, #f85032 0%,#f6290c 0%,#f16f5c 50%,#e73827 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 );
 }
-
 .banner{
     height: 15%;
     padding: 20px;
     background:transparent;
 }
-
 .banner img{
     height: 100%;
     width: auto;
@@ -19,11 +17,10 @@ body{
     margin-right:auto;
     display:block;
 }
-
 #turn-table{
     background:transparent;
     width: 100%;
-    max-width: 600px;
+    max-width: 300px;
     position: relative;
     margin: 10px auto;
 }
@@ -37,7 +34,6 @@ body{
 #turn-table-animation-canvas{
     z-index: 1;
 }
-
 #footer{
     height: 2em;
     position: absolute;
@@ -46,8 +42,6 @@ body{
     margin-top: 40px;
     margin-bottom: 40px;
 }
-
-
 .turn-table-img-group{
     position:  absolute;
 	top: 0;
