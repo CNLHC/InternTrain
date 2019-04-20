@@ -2,7 +2,7 @@
 
 ## 前端
 
-1. 使用 `Canvas` 及相关API实现前端动画。
+1. 使用 `Canvas` 及相关API实现前端动画(可以兼容 ios6.0/Android 4.4+)
 2. 使用 `XMLHttpRequest` 实现与后端的交互。
 
 ## 后端
