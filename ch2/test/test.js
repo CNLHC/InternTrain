@@ -71,7 +71,7 @@ test('Header/forwarded', async t => {
         method: "GET",
         url: "/",
         headers:{
-            "x-forwarded-for":"for=192.168.1.1, for=198.51.100.17"
+            "forwarded":"for=192.168.1.1, for=198.51.100.17"
         }
     }).then(res =>
         t.deepEqual(JSON.parse(res.rawPayload.toString()), {
