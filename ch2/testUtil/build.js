@@ -1,9 +1,7 @@
 
 function buildTestFastify() {
-    const fastify = require('fastify')({
-        logger: true
-    })
-    fastify.register(require('../getRealIP'))
+    const fastify = require('fastify')()
+    fastify.register(require('../src/index'))
     fastify.register(require('./route'))
     return fastify
 }

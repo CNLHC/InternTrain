@@ -1,5 +1,6 @@
 import test from 'ava';
 const buildFastify = require('../testUtil/build')
+const parseClientIP =  require('../src/getClientIP')
 
 const HeaderToTest = [
     "x-client-ip", //Amazon EC2, Heroku
@@ -81,3 +82,41 @@ test('Header/forwarded', async t => {
         t.fail()
     )
 });
+
+test('Direct/connection-socket-remoteAddress', t=>{
+    const mockReq = {
+        connection: {
+            socket: {
+                remoteAddress: '192.168.1.2',
+            },
+        },
+    };
+    t.deepEqual("192.168.1.2",parseClientIP(mockReq))
+})
+
+test('Direct/socket-remoteAddress', t=>{
+    const mockReq = {
+        socket: {
+            remoteAddress: '192.168.1.2',
+        },
+    };
+    t.deepEqual("192.168.1.2",parseClientIP(mockReq))
+})
+
+test('Direct/info-remoteAddress', t=>{
+    const mockReq = {
+        info: {
+            remoteAddress: '192.168.1.2',
+        },
+    };
+    t.deepEqual("192.168.1.2",parseClientIP(mockReq))
+})
+
+test('Direct/connection-remoteAddress', t=>{
+    const mockReq = {
+        connection: {
+            remoteAddress: '192.168.1.2',
+        },
+    };
+    t.deepEqual("192.168.1.2",parseClientIP(mockReq))
+})
